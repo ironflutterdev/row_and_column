@@ -23,3 +23,21 @@
    4. MainAxisAlignment.spaceBetween : 위젯과 위젯 사이가 동일하게 정렬됨
    5. MainAxisAlignment.spaceEvenly : 위젯을 같은 간격으로 배치하지만, 시작과 끝이 빈 간격으로 둔다.
    6. MainAxisAlignment.spaceAround : spaceEvenly + 시작과 끝의 간격을 1/2
+
+## 03. Column and Row CrossAxisAlignment
+1. Column
+   1. Column 위젯은 주축(세로)에서 차지할 수 있는 최대한의 크기를 차지한다.
+   2. Column 위젯은 반대축(가로)에서 최소한의 크기만 차지한다.
+   3. 따라서 반대축 정렬을 위해서는 반대축 즉 세로 크기를 늘려줘야 한다.
+      1. 최상위 Container 위젯에 인자 추가 width : MediaQuery.of(context).size.width
+   4. CrossAxisAlignment.start : 왼쪽 정렬
+   5. CrossAxisAlignment.center (default) : 가로 가운데 배치
+   6. CrossAxisAlignment.end : 오른쪽 정렬
+2. Row
+   1. Row 위젯은 주축(가로)에서 차지할 수 있는 최대한의 크기를 차지한다.
+   2. Row 위젯은 반대축(세로)에서 최소한의 크기만 차지한다.
+   3. 따라서 반대축 정렬을 위해서는 반대축 즉 세로 크기를 늘려줘야 한다.
+      1. 최상위 Container 위젯에 인자 추가 height : MediaQuery.of(context).size.height
+   4. CrossAxisAlignment.start : 맨위 정렬
+   5. CrossAxisAlignment.center (default) : 세로 가운데 배치
+   6. CrossAxisAlignment.end : 맨아래 정렬

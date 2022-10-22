@@ -9,11 +9,22 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: Container(
           color: Colors.black,
+          height : MediaQuery.of(context).size.height,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
                 color: Colors.red,
+                width: 50.0,
+                height: 50.0,
+              ),
+              Container(
+                color: Colors.orange,
+                width: 50.0,
+                height: 50.0,
+              ),
+              Container(
+                color: Colors.yellow,
                 width: 50.0,
                 height: 50.0,
               ),
